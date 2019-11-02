@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/beejee-test-app/static/js/main.dd783845.chunk.js",
-    "main.js.map": "/beejee-test-app/static/js/main.dd783845.chunk.js.map",
-    "runtime-main.js": "/beejee-test-app/static/js/runtime-main.2ce1ee25.js",
-    "runtime-main.js.map": "/beejee-test-app/static/js/runtime-main.2ce1ee25.js.map",
-    "static/js/2.748ffd00.chunk.js": "/beejee-test-app/static/js/2.748ffd00.chunk.js",
-    "static/js/2.748ffd00.chunk.js.map": "/beejee-test-app/static/js/2.748ffd00.chunk.js.map",
-    "index.html": "/beejee-test-app/index.html",
-    "precache-manifest.0d5f8fe7357264da1141eb83303cf939.js": "/beejee-test-app/precache-manifest.0d5f8fe7357264da1141eb83303cf939.js",
-    "service-worker.js": "/beejee-test-app/service-worker.js"
+    "main.js": "/beefee-test-app/static/js/main.d980df91.chunk.js",
+    "main.js.map": "/beefee-test-app/static/js/main.d980df91.chunk.js.map",
+    "runtime-main.js": "/beefee-test-app/static/js/runtime-main.52db1cc6.js",
+    "runtime-main.js.map": "/beefee-test-app/static/js/runtime-main.52db1cc6.js.map",
+    "static/js/2.748ffd00.chunk.js": "/beefee-test-app/static/js/2.748ffd00.chunk.js",
+    "static/js/2.748ffd00.chunk.js.map": "/beefee-test-app/static/js/2.748ffd00.chunk.js.map",
+    "index.html": "/beefee-test-app/index.html",
+    "precache-manifest.4f901a768cde975152eb8dbcd83f8dbb.js": "/beefee-test-app/precache-manifest.4f901a768cde975152eb8dbcd83f8dbb.js",
+    "service-worker.js": "/beefee-test-app/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ce1ee25.js",
+    "static/js/runtime-main.52db1cc6.js",
     "static/js/2.748ffd00.chunk.js",
-    "static/js/main.dd783845.chunk.js"
+    "static/js/main.d980df91.chunk.js"
   ]
 }
