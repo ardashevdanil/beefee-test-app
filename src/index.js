@@ -1,12 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import axios from 'axios'
+import { Provider } from 'react-redux'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { App } from './App'
+import { configureStore } from './redux'
+import * as serviceWorker from './serviceWorker'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+axios.defaults.baseURL = 'https://uxcandy.com/~shapoval/test-task-backend/v2'
+
+const store = configureStore()
+
+ReactDOM.render((
+  <Provider store={store}>
+    <App />
+  </Provider>
+
+), document.getElementById('root'))
+
+serviceWorker.unregister()

@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 
-function App() {
+import { Tasks } from './components/Tasks'
+import { Login } from './components/Login'
+import { EditTask } from './components/EditTask'
+import { AddTask } from './components/AddTask'
+
+export const App = () => {
+  const [selectedTask, setSelectedTask] = useState(0);
+  const token = useSelector(state => state.auth.token)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Login />
+      <Tasks setSelectedTask={setSelectedTask} />
+      {token && selectedTask ? <EditTask selectedTask={selectedTask} /> : null}
+      <AddTask />
     </div>
-  );
+  )
 }
-
-export default App;
